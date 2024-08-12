@@ -3,6 +3,42 @@
     display: flex;
     justify-content: start;
     align-items: center;
-    
+
+    background-image: url("/assets/img_fondo.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+/* Important da prioridad al estilo ante CSS */
+
+.proyecto {
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
 
 }
+.card:hover{
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0);
+    transform: translateY(-20px);
+    
+    
+} 
+
+
+.text-shadow-1 {
+    text-shadow: -2px 0px 6px rgba(0, 0, 0, 0);
+}
+
+.text-shadow-2 { text-shadow: 0 .25rem .5rem rgba(0, 0, 0, .25); }
+.text-shadow-3 { text-shadow: 0 .5rem 1.5rem rgba(0, 0, 0, .25); }
+
+
+.texto-gigante{
+    font-size: 80px;
+}
+
+.chakra-petch-light {
+    font-family: "Chakra Petch", sans-serif;
+    font-weight: 200;
+    font-style: normal;
+  }

@@ -6,6 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Arely López</title>
 
+    <link rel="shortcut icon" href="../assets/favicon.png" type="image/x-icon">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap"
+        rel="stylesheet">
+
+
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 
@@ -19,7 +28,7 @@
 <body>
     <!-- Cabecera de mi página -->
     <header>
-        <nav class="navbar navbar-expand-md bg-black">
+        <nav class="navbar fixed-top navbar-expand-md bg-black">
             <nav class="navbar navbar-expand-md bg-black" data-bs-theme="dark">
                 <div class="container">
                     <a class="navbar-brand text-white" href="#">Arely</a>
@@ -49,23 +58,28 @@
                 </div>
             </nav>
     </header>
-    <main>
-        <section id="presentacion" class="container col-xxl-8 px-4 py-5 d-flex justify-content-start
-            align-items-center">
-            <div class="row flex-lg-row align-items-center g-5 py-5">
-                <div class="col-lg-6">
-                </div>
-                <div class="col-lg-6">
-                    <h1 class="display-5 fw-bold text-body-emphasis lh-1 mb-3">Arely López
-                    </h1>
-                    <p class="lead">Desarrolladora front-end con experiencia en HTML, CSS, JavaScript y frameworks
-                        como
-                        React. Apasionada por la creación de interfaces intuitivas y responsivas que mejoran la
-                        experiencia del usuario.</p>
-                    <div class="d-grid gap-2 d-md-flex justify-content-md-start">
-                        <button type="button" class="btn btn-primary btn-lg px-4 me-md-2">Contáctame</button>
-                        <button type="button"
-                            class="btn btn-outline-secondary btn-lg px-4">lcervantesarely@gmail.com</button>
+    <main class="pb-3">
+
+        <section id="presentacion" class="container-fluid" data-bs-theme="dark">
+            <div class="container col-xxl-8 px-4 py-5 d-flex justify-content-start align-items-center">
+                <div class="row flex-lg-row align-items-center g-5 py-5">
+                    <div class="col-lg-7 bg-black p-3">
+                        <h1 id="app" class="display-5 fw-bold text-white text-shadow-1 1h-1 mb-3 chakra-petch-light">
+                            Arely López
+                        </h1>
+                        <p class="bg-black lead text-bg-dark text-shadow-1">Desarrolladora Front-end con
+                            habilidades en el área administrativa, experiencia en
+                            JavaScript, HTML, CSS y Figma para el diseño de interfaces. Familiarizada con Scrum para una
+                            gestión ágil de proyectos y con habilidades en el uso de Git y GitHub para un flujo de
+                            trabajo
+                            eficiente.</p>
+                        <div class="d-grid gap-2 d-md-flex justify-content-md-start">
+                            <button type="button" class="btn bg-light bg-gradient btn-lg px-4 me-md-2"><a
+                                    class="text-dark"
+                                    href="https://mail.google.com/mail/?view=cm&fs=1&to=lcervantesarely@gmail.com&su=Asunto&body=Hola%20%20%20%20%20."
+                                    target="_blank">Contáctame</a>
+                            </button>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -78,7 +92,7 @@
             <div class="row g-4 py-5 row-cols-1 row-cols-lg-3">
 
                 <div class="feature col">
-                    <div class="d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient
+                    <div class="d-inline-flex align-items-center justify-content-center text-bg-secondary bg-gradient
                             fs-2 py-2 px-3 rounded">
                         <i class="bi bi-code-square"></i>
                     </div>
@@ -87,21 +101,21 @@
                 </div>
 
                 <div class="feature col">
-                    <div class="d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient
+                    <div class="d-inline-flex align-items-center justify-content-center text-bg-secondary bg-gradient
                             fs-2 py-2 px-3 rounded">
                         <i class="bi bi-people"></i>
                     </div>
                     <h3 class="fs-2 text-body-emphasis my-2">Trabajo en equipo</h3>
-                    <p>Colaboro con equipos multidisciplinarios.</p>
+                    <p>Apoyo y colaboro con equipos multidisciplinarios</p>
                 </div>
 
                 <div class="feature col">
-                    <div class="d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient
+                    <div class="d-inline-flex align-items-center justify-content-center text-bg-secondary bg-gradient
                             fs-2 py-2 px-3 rounded">
                         <i class="bi bi-award"></i>
                     </div>
-                    <h3 class="fs-2 text-body-emphasis my-2">Responsabilidad</h3>
-                    <p>Compromiso por mis responsabilidades.</p>
+                    <h3 class="fs-2 text-body-emphasis my-2">Responsabilidad personal</h3>
+                    <p>Compromiso por el cumplimiento de mis objetivos</p>
                 </div>
 
             </div>
@@ -109,30 +123,44 @@
 
 
         <section id="proyectos" class="container px-4 py-5">
-            <h2 class="pb-2 border-bottom">Custom cards</h2>
-
+            <h2 class="pb-2 border-bottom titulo">Proyectos</h2>
             <div class="row row-cols-1 row-cols-lg-3 align-items-stretch g-4 py-5">
+
                 <div class="col">
-                    <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg"
-                        style="background-image: url('unsplash-photo-1.jpg');">
-                        <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
-                            <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Short title, long jacket</h3>
+                    <div id="proyecto-1"
+                        class="proyecto card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg">
+                        <img src="./assets/tag_Talent.png" class="card-img-top" alt="Tag">
+
+                        <div class="card-body d-flex flex-column h-100 p-6 pb-3 text-bg-white text-shadow-1">
+                            <h3 class="card-title display-8 lh-1 fw-bold">Tag Talent</h3>
+                            <p class="card-text">Colaboración en equipo para el desarrollo de una red social
+                                centrada en
+                                la empleabilidad, utilizando tecnologías como HTML, JavaScript, CSS, Java y MySQL.
+                            </p>
                             <ul class="d-flex list-unstyled mt-auto">
-                                <li class="me-auto">
-                                    <img src="https://github.com/twbs.png" alt="Bootstrap" width="32" height="32"
-                                        class="rounded-circle border border-white">
-                                </li>
                                 <li class="d-flex align-items-center me-3">
-                                    <svg class="bi me-2" width="1em" height="1em">
-                                        <use xlink:href="#geo-fill"></use>
-                                    </svg>
-                                    <small>Earth</small>
+                                    <i class="bi bi-code-square"></i>
+                                    <a href="https://belsharon.github.io/proyecto-integrador/index.html" target="_blank"
+                                        class="ps-3 text-white">URL</a>
                                 </li>
-                                <li class="d-flex align-items-center">
-                                    <svg class="bi me-2" width="1em" height="1em">
-                                        <use xlink:href="#calendar3"></use>
-                                    </svg>
-                                    <small>3d</small>
+                            </ul>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div id="proyecto-2"
+                        class="proyecto card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg">
+                        <img src="./assets/clon_Google.png" class="card-img-top" alt="clon_Google">
+                        <div class="card-body d-flex flex-column h-100 p-6 pb-3 text-white text-shadow-1">
+                            <h3 class="card-title display-8 lh-1 fw-bold">Clon de Google</h3>
+                            <p class="card-text">Recreación de la Página Principal de Google usando HTML y CSS.</p>
+                            <ul class="d-flex list-unstyled mt-auto">
+                                <li class="d-flex align-items-center me-3">
+                                    <i class="bi bi-code-square"></i>
+                                    <a href="https://clon-google-arely.netlify.app" target="_blank"
+                                        class="ps-3 text-white">URL</a>
                                 </li>
                             </ul>
                         </div>
@@ -140,116 +168,68 @@
                 </div>
 
                 <div class="col">
-                    <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg"
-                        style="background-image: url('unsplash-photo-2.jpg');">
-                        <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
-                            <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Much longer title that wraps to
-                                multiple
-                                lines</h3>
+                    <div id="proyecto-3"
+                        class="proyecto card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg">
+                        <img src="./assets/portafolio.png" class="card-img-top" alt="portafolio">
+                        <div class="card-body d-flex flex-column h-100 p-6 pb-3 text-white text-shadow-1">
+                            <h3 class="card-title display-8 lh-1 fw-bold">Mi portafolio</h3>
+                            <p class="card-text">Creación de mi portafolio personal empleando HTML, CSS y JavaScript.</p>
                             <ul class="d-flex list-unstyled mt-auto">
-                                <li class="me-auto">
-                                    <img src="https://github.com/twbs.png" alt="Bootstrap" width="32" height="32"
-                                        class="rounded-circle border border-white">
-                                </li>
                                 <li class="d-flex align-items-center me-3">
-                                    <svg class="bi me-2" width="1em" height="1em">
-                                        <use xlink:href="#geo-fill"></use>
-                                    </svg>
-                                    <small>Pakistan</small>
-                                </li>
-                                <li class="d-flex align-items-center">
-                                    <svg class="bi me-2" width="1em" height="1em">
-                                        <use xlink:href="#calendar3"></use>
-                                    </svg>
-                                    <small>4d</small>
+                                    <i class="bi bi-code-square"></i>
+                                    <a href="https://github.com/ArelyLopCerv/portafolio-b7-g1.git" target="_blank"
+                                        class="ps-3 text-white">URL</a>
                                 </li>
                             </ul>
                         </div>
                     </div>
                 </div>
 
-                <div class="col">
-                    <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg"
-                        style="background-image: url('unsplash-photo-3.jpg');">
-                        <div class="d-flex flex-column h-100 p-5 pb-3 text-shadow-1">
-                            <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Another longer title belongs here</h3>
-                            <ul class="d-flex list-unstyled mt-auto">
-                                <li class="me-auto">
-                                    <img src="https://github.com/twbs.png" alt="Bootstrap" width="32" height="32"
-                                        class="rounded-circle border border-white">
-                                </li>
-                                <li class="d-flex align-items-center me-3">
-                                    <svg class="bi me-2" width="1em" height="1em">
-                                        <use xlink:href="#geo-fill"></use>
-                                    </svg>
-                                    <small>California</small>
-                                </li>
-                                <li class="d-flex align-items-center">
-                                    <svg class="bi me-2" width="1em" height="1em">
-                                        <use xlink:href="#calendar3"></use>
-                                    </svg>
-                                    <small>5d</small>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
+
+
+
+
+
         </section>
 
         <section id="testimonios">
-            <div id="myCarousel" class="carousel slide mb-6" data-bs-ride="carousel">
-                <div class="carousel-indicators">
-                    <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class=""
-                        aria-label="Slide 1"></button>
-                    <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"
-                        class=""></button>
-                    <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"
-                        class="active" aria-current="true"></button>
-                </div>
+            <h1 class="text-center my-5">Testimonios</h1>
+            <div id="myCarousel" class="carousel slide carousel-dark mb-6 carousel-fade" data-bs-theme="dark"
+                data-bs-ride="carousel">
+
+
                 <div class="carousel-inner">
-                    <div class="carousel-item">
-                        <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg"
-                            aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false">
-                            <rect width="100%" height="100%" fill="var(--bs-secondary-color)"></rect>
-                        </svg>
-                        <div class="container">
-                            <div class="carousel-caption text-start">
-                                <h1>Example headline.</h1>
-                                <p class="opacity-75">Some representative placeholder content for the first slide of
-                                    the
-                                    carousel.</p>
-                                <p><a class="btn btn-lg btn-primary" href="#">Sign up today</a></p>
-                            </div>
-                        </div>
+                    <div class="carousel-item active" data-bs-interval="2000">
+                        <article class="container text-center">
+                            <img class="rounded-4" src="./assets/testimonio1.png" width="200px" alt="testimonio1">
+                            <h3 class="my-3">Guadalupe Santiago</h3>
+                            <p>"Arely es una persona responsable"</p>
+
+                        </article>
                     </div>
-                    <div class="carousel-item">
-                        <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg"
-                            aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false">
-                            <rect width="100%" height="100%" fill="var(--bs-secondary-color)"></rect>
-                        </svg>
-                        <div class="container">
-                            <div class="carousel-caption">
-                                <h1>Another example headline.</h1>
-                                <p>Some representative placeholder content for the second slide of the carousel.</p>
-                                <p><a class="btn btn-lg btn-primary" href="#">Learn more</a></p>
-                            </div>
-                        </div>
+
+                    <div class="carousel-item" data-bs-interval="2000">
+                        <article class="container text-center">
+                            <img class="rounded-4" src="./assets/testimonio2.png" width="200px" alt="testimonio1">
+                            <h3 class="my-3">Adosedeel Osorio</h3>
+                            <p>"Arely es una persona comprometida con sus proyectos"</p>
+
+                        </article>
                     </div>
-                    <div class="carousel-item active">
-                        <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg"
-                            aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false">
-                            <rect width="100%" height="100%" fill="var(--bs-secondary-color)"></rect>
-                        </svg>
-                        <div class="container">
-                            <div class="carousel-caption text-end">
-                                <h1>One more for good measure.</h1>
-                                <p>Some representative placeholder content for the third slide of this carousel.</p>
-                                <p><a class="btn btn-lg btn-primary" href="#">Browse gallery</a></p>
-                            </div>
-                        </div>
+
+                    <div class="carousel-item" data-bs-interval="2000">
+                        <article class="container text-center">
+                            <img class="rounded-4" src="./assets/testimonio3.png" width="200px" alt="testimonio1">
+                            <h3 class="my-3">Dulce Ramírez</h3>
+                            <p>"Arely se compromete y busca mejorar en cada momento"</p>
+
+                        </article>
                     </div>
+
                 </div>
+
+
+
                 <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
                     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                     <span class="visually-hidden">Previous</span>
@@ -262,20 +242,42 @@
         </section>
 
     </main>
-    <footer id="contacto" class="py-3 my-4">
+    <footer id="contacto" class="bg-black py-3 mt-5" data-bs-theme="dark">
+        <p class="mt-5 text-white text-center texto-gigante">
+            <i class="bi bi-file-code-fill"></i>
+        </p>
+        <h4 id="frase" class="text-white text-center mb-5">“Hacer una única cosa de manera diferente es a menudo lo
+            mismo que hacer todo de manera diferente.”</h4>
         <ul class="nav justify-content-center border-bottom pb-3 mb-3">
-            <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Home</a></li>
-            <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Features</a></li>
-            <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Pricing</a></li>
-            <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">FAQs</a></li>
-            <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">About</a></li>
+            <li class="nav-item fs-1 ">
+                <a href="https://github.com/ArelyLopCerv" target="_blank" class="nav-link px-5 text-body-secondary">
+                    <i class="bi bi-github text-white"></i>
+                </a>
+            </li>
+            <li class="nav-item fs-1">
+                <a href="https://www.linkedin.com/in/arelylcervantes/" target="_blank"
+                    class="nav-link px-5 text-body-secondary">
+                    <i class="bi bi-linkedin text-white"></i>
+                </a>
+            </li>
+            <li class="nav-item fs-1 ">
+                <a href="https://www.instagram.com/arelyl.cervantes?igsh=aWVrZ3dseWp6MHQy&utm_source=qr" target="_blank"
+                    class="nav-link px-5 text-body-secondary">
+                    <i class="bi bi-instagram text-white"></i>
+                </a>
+            </li>
         </ul>
-        <p class="text-center text-muted">© 2022 Company, Inc</p>
+        <p class="text-center text-white">© 2024 Arely</p>
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
+
+    <!--Esto es un CDN -->
+    <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
+
+    <script src="/script.js"></script>
 
 </body>
 
